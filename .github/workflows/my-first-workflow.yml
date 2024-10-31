@@ -1,0 +1,6 @@
+###############################################
+#Ecire un GitHub Action
+#Qui utilise le dockeur file qui
+#Build une image et la pousse sur dockeur HUB
+#Il se déclenche au push sur la branche main
+####################################################

@@ -12,4 +12,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout du code
+      uses: actions/checkout@v2
       - run: echo "Je dois utiliser docker"

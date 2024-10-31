@@ -20,3 +20,7 @@ jobs:
       - name: Build the Docker image
         run: |
           docker build -t theogrigner/tudo-alpine2 .
+          
+      - name: Push the Docker image
+        run: |
+          docker push theogrigner/tudo-alpine2:latest

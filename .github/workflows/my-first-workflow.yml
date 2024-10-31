@@ -7,11 +7,17 @@
 
 name: my-first-workflow
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
-  Explore-GitHub-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout du code
-      uses: actions/checkout@v2
-      - run: echo "Je dois utiliser docker"
+        uses: actions/checkout@v2
+      - name: Installation des dépendances
+        run: npm install
+      - name: Exécution des tests
+        run: npm test
